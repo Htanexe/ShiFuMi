@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0px;
+}
+
+.accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../media/accueil\ img.jpg);
+}
+
+.logo {
+    height: 40vh;
+}
+
+.accueil div {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.accueil h2 {
+    display: flex;
+    font-size: 4vh;
+    border: 2px solid black;
+    font-weight: 100;
+    justify-content: center;
+    width: 60vh;
+    margin: 0px;
+    font-family: 'Pixelify Sans', sans-serif;
+    cursor: pointer;
+    background-color: #706e71;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.accueil h2:hover {
+    border: 3px solid white;
+    
+}
+
+.perso {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/media/perso\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.perso div {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5vh;
+}
+
+.perso img {
+    height: 180px;
+    width: 180px;
+    transition: 0.2s;
+    transform-origin: center; 
+    /*marche pas*/
+}
+
+.select {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
+    border: solid black 2px;
+}
+
+.perso img:hover {
+    height: 190px;
+    width: 190px;
+}
+
+input::placeholder {
+    color: #2d2d2d;
+    opacity: 1;
+  }
+.perso input {
+    margin-top: 5vh;
+    outline: none;
+    color: white;
+    background-color: #706e71;
+    border: 2px solid black;
+    width: 30vh;
+    height: 5vh;
+    font-size: 3vh;
+    font-family: 'Pixelify Sans', sans-serif;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.perso p {
+    display: flex;
+    font-size: 4vh;
+    color: white;
+    border: 2px solid black;
+    font-weight: 100;
+    justify-content: center;
+    width: 120vh;
+    font-family: 'Pixelify Sans', sans-serif;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #706e71;
+}
+
+.perso p:hover {
+    border: 3px solid white;
+}
+
+.battle {
+    display: none;
+    flex-direction: column;
+    height: 95vh;
+    width: 100%;
+    background-image: url(../media/background\ dirt.png);
+    padding-top: 5vh;
+}
+
+.battle p {
+    display: flex;
+    margin: 0px;
+    font-size: 5vh;
+    justify-content: center;
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.Perso-ordi, .Perso-player {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.choice img{
+    width: 15rem;
+    height: 15rem;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.choice img:hover {
+    width: 16rem;
+    height: 16rem;
+    transition: 0.3s;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    gap: 15vh;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40vh;
+    padding-bottom: 5vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    font-size: 7vh;
+    margin: 0px;
+    margin-bottom: 4vh;
+}
+
+h2 {
+    display: flex;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    font-size: 5vh;
+}
+
+.rules {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/media/rules\ background.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.rules div {
+    background-image: url(/assets/media/livre.png);
+    background-size: 490px, 606px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 490px;
+    height: 606px;
+}
+
+.rules h2, p{
+    margin : 7vh;
+}
+
+.rules h2 {
+    color: black;
+    justify-content: center;
+    font-size: 5vh;
+}
+.rules p {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 3vh;
+}
+
+.rules p .win {
+    font-weight: 600;
+    color: #299a29;
+}
+
+.rules p .loose {
+    font-weight: 600;
+    color: #fd4444;
+}
+
+/* bouton retour */
+.rules h3 {
+    display: flex;
+    font-size: 4vh;
+    color: white;
+    border: 2px solid black;
+    font-weight: 100;
+    justify-content: center;
+    width: 120vh;
+    font-family: 'Pixelify Sans', sans-serif;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #706e71;
+}
+.rules h3:hover {
+    border: 3px solid white;
+}

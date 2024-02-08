@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiFuMi</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+    <audio src="./assets/media/minecraft_click.mp3" ></audio>
+    <audio src="./assets/media/equalityGame.mp3"></audio>
+    <audio src="./assets/media/equalityRound.mp3"></audio>
+    <audio src="./assets/media/looseGame.mp3"></audio>
+    <audio src="./assets/media/looseRound.mp3"></audio>
+    <audio src="./assets/media/winGame.mp3"></audio>
+    <audio src="./assets/media/winRound.mp3"></audio>
+    <main>
+        <!-- Page de l'accueil -->
+        <section class="accueil">
+            <img class="logo" src="./assets/media/logo.png" alt="Logo Minecraft">
+            <div>
+                <h2>Jouer une partie</h2>
+                <h2>Personnalisation</h2>
+                <h2>Règles du jeu</h2>
+            </div>
+        </section>
+        <!-- Page de la personnalisation -->
+        <section class="perso">
+            <div>
+                <img src="./assets/media/steve.jpg" alt="Skin de Steve">
+                <img src="./assets/media/alex.jpg" alt="Skin de Alex">
+                <img src="./assets/media/herobrine.jpg" alt="Skin de Herobrine">
+                <img src="./assets/media/zombie.png" alt="Skin de Zombie">
+            </div>
+            <input type="text" placeholder="Pseudo">
+            <p class="back">Valider</p>
+        </section>
+        <!-- Page du jeu -->
+        <section class="battle">
+            <h1>Manche 1</h1>
+            <div class="score">
+                <div class="Perso-player">
+                    <h2>Score Joueur : 0</h2>
+                </div>
+                <div class="Perso-ordi">
+                    <h2 >Score Ordinateur : 0</h2>
+                </div>
+            </div>
+            <div class="game">
+                <div class = "choice">
+                    <img src="./assets/media/ciseau.png" alt="Ciseau">
+                    <h3>Ciseau</h3>
+                </div>
+
+                <div class = "choice"> 
+                    <img src="./assets/media/pierre.png" alt="Pierre">
+                    <h3>Pierre</h3>
+                </div>
+
+                <div class = "choice">
+                    <img src="./assets/media/paper.png" alt="Feuille">
+                    <h3>Feuille</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Page des règles -->
+        <section class="rules">
+            <div>
+                <h2>Les règles !</h2>
+                <p>La <span class="win">pierre</span> écrase les <span class="loose">cisailles</span> et gagne.</p>
+                <p>Le <span class="win">papier</span> enveloppe la <span class="loose">pierre</span> et gagne.</p>
+                <p>Les <span class="win">cisailles</span> découpent la <span class="loose">feuille</span> et gagnent.   
+            </div>
+            <h3>Retour</h3>
+        </section> 
+    </main>
+</body>
+</html>
